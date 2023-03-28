@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const db = require('./db');
 const fs = require('fs');
-const { graphiqlExpress,graphqlExpress } = require('apollo-server-express');
+const { graphiqlExpress, graphqlExpress } = require('apollo-server-express');
 /************************************************************************/
 
 

@@ -1,13 +1,44 @@
+#... this is the main thing... College22, Student23 are type_definitions22
 type Query {
    greeting: String
-   students: [Student]
-   studentById(id:ID!):Student 
+   students: [Student23]
+   studentById(id:ID!): Student23
+   sayHello(name:String!):String
+   spanishWishes (name:String!): String
 }
 
-type Student {
-   id:ID!
-   firstName:String
-   lastName:String
-   password:String
-   collegeId:String
+type Mutation {
+   
+   #... this returns a string --> which is newly created studentId
+   createStudent12(collegeId:ID,firstName:String,lastName:String):String
+
+   #... But we want to return the whole Object... to verify that all details got inserted
+   createStudent13(collegeId143:ID,firstName:String,lastName:String, email:String):Student23
+
+   signUp(input:SignUpInput):String
 }
+
+#... these are interfaces ..........................................
+type College22 {
+   id: ID!
+   name: String
+   location: String
+   rating: Float
+}
+
+input SignUpInput {
+   email:String!,
+   password:String!,
+   firstName:String!
+}
+
+type Student23 {
+   id:ID!
+   firstName: String
+   lastName: String
+   fullName: String
+   password: String
+   email: String
+   collegeId44: College22
+}
+#... end of interfaces ..........................................
