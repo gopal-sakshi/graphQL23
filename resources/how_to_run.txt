@@ -1,0 +1,13 @@
+run the application
+we dont use mongo (or) any other DB
+we just mimic database ---> require('notarealdb');
+
+http://localhost:3079/graphiql
+
+{
+    greeting
+    students { id firstName lastName }
+    studentById(id:"S1001") { id firstName lastName }
+    sayHello(name:"SubbaRao")
+    spanishWishes(name:"Madridista")
+}
