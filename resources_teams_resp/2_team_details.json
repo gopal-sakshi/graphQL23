@@ -1,0 +1,9 @@
+{
+    "team": {
+        "id": "1",
+        "name": "A team has no name",
+        "division": "Winterfell",
+        "owner": "Ned Stark",
+        "headCoach": "Catelyn Stark"
+    }
+}

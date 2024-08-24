@@ -1,0 +1,31 @@
+query CompareRosterInfo {
+    fetchSelectedTeamsDetails(ids: ["1", "2"]) {
+        id
+        name
+        division
+        owner
+        headCoach
+        roster {
+            id
+            name
+            position
+        }
+    }
+}
+=======================================================================
+
+query TeamDetails {
+    getTeam(id: "1") {
+        id
+        name
+        division
+        owner
+        headCoach
+        roster {
+            id
+            name
+            position
+        }
+    }
+}
+=======================================================================

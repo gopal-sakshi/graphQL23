@@ -4,10 +4,59 @@ we just mimic database ---> require('notarealdb');
 
 http://localhost:3079/graphiql
 
+ALIAS
+FRAGMENTS
+COMPARISION
+===================================================================================
+
 {
     greeting
+    namasteAlias: greeting
     students { id firstName lastName }
+    vidyardhiAlias: students { id firstName lastName }
     studentById(id:"S1001") { id firstName lastName }
+    S1001_vidyardhi: studentById(id:"S1001") { id firstName lastName }
     sayHello(name:"SubbaRao")
     spanishWishes(name:"Madridista")
 }
+
+{
+    charactersRslvr11 {
+        id
+        name
+        species
+    }
+}
+===================================================================================
+
+{
+    charactersRslvr11 {
+        name
+        species
+        ...color23
+        ...info23
+
+    }
+}
+
+fragment color23 on characters23 {
+    hair_color
+    skin_color
+    eye_color
+}
+
+fragment info23 on characters23 {    
+    gender
+    homeworld
+}
+===================================================================================
+
+query {
+    singleCharByName11(id:178) {
+        name 
+        gender
+    }
+}
+
+
+===================================================================================

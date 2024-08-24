@@ -1,0 +1,14 @@
+{
+    "teams": [
+        {
+            "id": "1",
+            "name": "A team has no name",
+            "division": "Winterfell"
+        },
+        {
+            "id": "2",
+            "name": "A team always has a name",
+            "division": "King's Landing"
+        }
+    ]
+}

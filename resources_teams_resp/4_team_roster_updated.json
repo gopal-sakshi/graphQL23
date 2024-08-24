@@ -1,0 +1,19 @@
+{
+    "teamId": "1",
+    "roster": [
+        {
+            "id": "p1",
+            "name": "Arya Stark",
+            "height": 195,
+            "weight": 220,
+            "position": "QB1"
+        },
+        {
+            "id": "p2",
+            "name": "John Snow",
+            "height": 188,
+            "weight": 240,
+            "position": "RB1"
+        }
+    ]
+}

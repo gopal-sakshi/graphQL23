@@ -1,0 +1,17 @@
+{
+    "team": {
+        "id": "1",
+        "name": "A team has no name",
+        "division": "Winterfell",
+        "owner": "Ned Stark",
+        "headCoach": "Catelyn Stark",
+        "players": [
+            {
+                "__link": "api/teams/1/players/p1"
+            },
+            {
+                "__link": "api/teams/1/players/p2"
+            }
+        ]
+    }
+}

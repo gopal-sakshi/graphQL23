@@ -5,6 +5,8 @@ type Query {
    studentById(id:ID!): Student23
    sayHello(name:String!):String
    spanishWishes (name:String!): String
+   charactersRslvr11: [characters23]
+   singleCharByName11(id:Int): characters23  
 }
 
 type Mutation {
@@ -40,5 +42,34 @@ type Student23 {
    password: String
    email: String
    collegeId44: College22
+}
+
+type Int23 {
+  value: Int
+}
+
+type String23 {
+  value: String
+}
+
+union FloatOrString23 = Int23 | String23
+
+type characters23 {
+    id: Int,
+    name: String,
+    height: Float,
+
+    ### this throws ERROR
+    mass: String,
+    
+    # mass: FloatOrString23,                ### something not working -- look into it later
+    
+    hair_color: String,
+    skin_color: String,
+    eye_color: String,
+    birth_year: String,
+    gender: String,
+    homeworld: String,
+    species: String
 }
 #... end of interfaces ..........................................

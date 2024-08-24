@@ -1,0 +1,15 @@
+{
+    "teamId": "1",
+    "roster": [
+        {
+            "id": "p1",
+            "name": "Arya Stark",
+            "position": "QB1"
+        },
+        {
+            "id": "p2",
+            "name": "John Snow",
+            "position": "RB1"
+        }
+    ]
+}

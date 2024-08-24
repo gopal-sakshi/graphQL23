@@ -1,10 +1,12 @@
 const db34 = require('./db');
 const Query = {
-    greeting: () => { return "Greetings fellow Madridistas !!!" },
+    greeting: () => { return `Greetings fellow Madridistas !!! ===> ${Date.now()}` },
     students: () => db34.students.list(),
     studentById: (root,args,context,info) => { return db34.students.get(args.id); },
     sayHello:(root,args,context,info) => `Hellooo ${args.name} !!!`,
-    spanishWishes: (root, args, context, info) => { return `Hola ${args.name}`}
+    spanishWishes: (root, args, context, info) => { return `Hola ${args.name}`},
+    charactersRslvr11: (root, args, context, info) => { return db34.characters.list() },
+    singleCharByName11: (root, args, context, info) => { return db34.characters.get(args.id)}
 }
 
 const Student23 = {
