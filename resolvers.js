@@ -38,6 +38,19 @@ const Mutation = {
         if(firstName.length > 15) throw new Error("only 15 characters allowed")
         if(password.length < 4 ) throw new Error("password should be long")
         return "success";
+    },
+    createChar23:(root, args, context, info) => {
+        const { name, id } = args;
+        if( id < 101 || id > 200) throw new Error("id out of range");
+        if(name.length < 3 || name.length > 20) throw new Error("peru enti ila undi");
+        console.log("args23 ====> ", args);
+        const newCharId = db34.characters.create({...args});
+        return db34.characters.get(newCharId);
+    },
+    createChar24:(root, args, context, info) => {
+        console.log("args23 ====> ", args.input11);
+        const newCharId = db34.characters.create({...args.input11});
+        return db34.characters.get(newCharId);        
     }
 }
 

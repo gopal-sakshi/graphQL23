@@ -7,6 +7,9 @@ http://localhost:3079/graphiql
 ALIAS
 FRAGMENTS
 COMPARISION
+DIRECTIVES
+- @include(if: Boolean) Only include this field in the result if the argument is true.
+- @skip(if: Boolean) Skip this field if the argument is true
 ===================================================================================
 
 {
@@ -58,5 +61,56 @@ query {
     }
 }
 
+query {
+    left23: singleCharByName11(id:178) {
+        ...comparisionFields23
+    }
+    right23: singleCharByName11(id:179) {
+        ...comparisionFields23
+    } 
+}
+
+fragment comparisionFields23 on characters23 {
+    name 
+    id 
+    birth_year
+    species
+}
+===================================================================================
+
+--- NOT WORKING
+query {
+    singleCharByName11_custom($id: Int, $withColor: Boolean!) {
+        singleCharByName11(id: $id) {
+            id
+            name
+            hair_color @include(if: $withFriends)
+        }
+    }
+}
+
+{
+  "id": 101,
+  "withColor": false
+}
 
 ===================================================================================
+
+mutation charCreateCheyyiRa23($input:characters23) {
+   createChar23(input11:$input)
+}
+{
+   "input":{ 
+        "name": "Subba Rao",
+        "height": 181,
+        "mass": 60,
+        "hair_color": "black",
+        "skin_color": "brown",
+        "eye_color": "black",
+        "birth_year": "47BBY",
+        "gender": "male",
+        "homeworld": "Earth",
+        "species": "Human",
+        "id": 188
+    }
+}

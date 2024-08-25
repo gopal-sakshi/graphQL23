@@ -1129,5 +1129,44 @@
     "homeworld": "Naboo",
     "species": "Human",
     "id": 187
+  },
+  {
+    "id": 188,
+    "name": "Subba rao",
+    "height": 166,
+    "mass": 55,
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "49BBY",
+    "gender": "male",
+    "homeworld": "Earth232323",
+    "species": "Human"
+  },
+  {
+    "id": 189,
+    "name": "Appa Rao",
+    "height": 166,
+    "mass": 55,
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "49BBY",
+    "gender": "male",
+    "homeworld": "Earth33331123",
+    "species": "Human"
+  },
+  {
+    "id": 191,
+    "name": "Kondalrao",
+    "height": 166,
+    "mass": "55",
+    "hair_color": "brown",
+    "skin_color": "light",
+    "eye_color": "brown",
+    "birth_year": "49BBY",
+    "gender": "male",
+    "homeworld": "Earth232323",
+    "species": "Human"
   }
 ]

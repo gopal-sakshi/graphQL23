@@ -1,47 +1,72 @@
 [
-    {
-        "id": "S1001",
-        "firstName": "Mohtashim",
-        "lastName": "Mohammad",
-        "email": "mohtashim.mohammad@tutorialpoint.org",
-        "password": "pass123",
-        "collegeId": "col-102"
-    },
-    {
-        "id": "S1002",
-        "email": "kannan.sudhakaran@tutorialpoint.org",
-        "firstName": "Kannan",
-        "lastName": "Sudhakaran",
-        "password": "pass123",
-        "collegeId": "col-101"
-    },
-    {
-        "id": "S1003",
-        "email": "kiran.panigrahi@tutorialpoint.org",
-        "firstName": "Kiran",
-        "lastName": "Panigrahi",
-        "password": "pass123",
-        "collegeId": "col-101"
-    },
-    {
-        "id": "BJLHWJlZn",
-        "email": "dulqer_s@gmail.com",
-        "firstName": "Dulqer",
-        "lastName": "Salman",
-        "password": "pass123",
-        "collegeId": "col-102"
-    },
-    {
-        "id": "rkTe4ylZ2",
-        "firstName": "Nivin",
-        "lastName": "Pauly",
-        "collegeId": "col-102"
-    },
-    {
-        "id": "HkL7IJgbn",
-        "firstName": "Fahaad",
-        "lastName": "Fasil",
-        "email": "fahaad.fasil@gmail.com",
-        "collegeId": "col-103"
-    }
+  {
+    "id": "S1001",
+    "firstName": "Mohtashim",
+    "lastName": "Mohammad",
+    "email": "mohtashim.mohammad@tutorialpoint.org",
+    "password": "pass123",
+    "collegeId": "col-102"
+  },
+  {
+    "id": "S1002",
+    "email": "kannan.sudhakaran@tutorialpoint.org",
+    "firstName": "Kannan",
+    "lastName": "Sudhakaran",
+    "password": "pass123",
+    "collegeId": "col-101"
+  },
+  {
+    "id": "S1003",
+    "email": "kiran.panigrahi@tutorialpoint.org",
+    "firstName": "Kiran",
+    "lastName": "Panigrahi",
+    "password": "pass123",
+    "collegeId": "col-101"
+  },
+  {
+    "id": "BJLHWJlZn",
+    "email": "dulqer_s@gmail.com",
+    "firstName": "Dulqer",
+    "lastName": "Salman",
+    "password": "pass123",
+    "collegeId": "col-102"
+  },
+  {
+    "id": "rkTe4ylZ2",
+    "firstName": "Nivin",
+    "lastName": "Pauly",
+    "collegeId": "col-102"
+  },
+  {
+    "id": "HkL7IJgbn",
+    "firstName": "Fahaad",
+    "lastName": "Fasil",
+    "email": "fahaad.fasil@gmail.com",
+    "collegeId": "col-103"
+  },
+  {
+    "id": "BkAbb8OoC",
+    "collegeId": "col-103",
+    "firstName": "chiru",
+    "lastName": "konidela"
+  },
+  {
+    "id": "SyZiNIusC",
+    "collegeId": "col-103",
+    "firstName": "nagarjuna",
+    "lastName": "akkineni"
+  },
+  {
+    "id": "ryZEUIOi0",
+    "collegeId": "col-104",
+    "firstName": "ntr",
+    "lastName": "jr"
+  },
+  {
+    "id": "ByBXD8ui0",
+    "collegeId": "col-103",
+    "firstName": "mahesh babu",
+    "lastName": "ghattamaneni",
+    "email": "mahesh.babu@gmail.com"
+  }
 ]

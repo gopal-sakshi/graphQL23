@@ -6,9 +6,10 @@ type Query {
    sayHello(name:String!):String
    spanishWishes (name:String!): String
    charactersRslvr11: [characters23]
-   singleCharByName11(id:Int): characters23  
+   singleCharByName11(id:Int): characters23
 }
 
+## QUERY VS MUTATION ==> While query fields are executed in parallel, mutation fields run in series, one after the other.
 type Mutation {
    
    #... this returns a string --> which is newly created studentId
@@ -18,6 +19,12 @@ type Mutation {
    createStudent13(collegeId143:ID,firstName:String,lastName:String, email:String):Student23
 
    signUp(input:SignUpInput):String
+
+   createChar23(id:Int!, name:String!, height:Float!, mass:Float!, hair_color:String!,
+    skin_color:String!, eye_color:String!, birth_year:String!, gender:String!, 
+    homeworld:String!, species:String!):characters23
+
+   createChar24(input11:characters23Input):characters23
 }
 
 #... these are interfaces ..........................................
@@ -53,6 +60,21 @@ type String23 {
 }
 
 union FloatOrString23 = Int23 | String23
+
+
+input characters23Input {
+    id: Int,
+    name: String,
+    height: Float,
+    mass: String,    
+    hair_color: String,
+    skin_color: String,
+    eye_color: String,
+    birth_year: String,
+    gender: String,
+    homeworld: String,
+    species: String
+}
 
 type characters23 {
     id: Int,
